@@ -12,3 +12,10 @@ int main() {
     printf("Enter two operands: ");
     scanf("%lf %lf", &num1, &num2);
 
+
+// Function prototypes for arithmetic operations
+float add(float a, float b);
+float subtract(float a, float b);
+float multiply(float a, float b);
+float divide(float a, float b);
+
