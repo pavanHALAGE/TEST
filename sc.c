@@ -12,3 +12,25 @@ int main() {
     printf("Enter two operands: ");
     scanf("%lf %lf", &num1, &num2);
 
+
+
+    // Function to perform addition
+float add(float a, float b) {
+    return a + b;
+}
+
+// Function to perform subtraction
+float subtract(float a, float b) {
+    return a - b;
+}
+
+// Function to perform multiplication
+float multiply(float a, float b) {
+    return a * b;
+}
+
+// Function to perform division
+float divide(float a, float b) {
+    return a / b;
+}
+
