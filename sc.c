@@ -12,3 +12,7 @@ int main() {
     printf("Enter two operands: ");
     scanf("%lf %lf", &num1, &num2);
 
+
+        return 0;
+}
+
