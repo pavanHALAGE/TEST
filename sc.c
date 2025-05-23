@@ -13,9 +13,36 @@ int main() {
     scanf("%lf %lf", &num1, &num2);
 
 
+
 // Function prototypes for arithmetic operations
 float add(float a, float b);
 float subtract(float a, float b);
 float multiply(float a, float b);
 float divide(float a, float b);
+
+     // Perform the operation based on the operator
+    switch (operator) {
+        case '+':
+            result = add(num1, num2);
+            printf("%.2f + %.2f = %.2f\n", num1, num2, result);
+            break;
+        case '-':
+            result = subtract(num1, num2);
+            printf("%.2f - %.2f = %.2f\n", num1, num2, result);
+            break;
+        case '*':
+            result = multiply(num1, num2);
+            printf("%.2f * %.2f = %.2f\n", num1, num2, result);
+            break;
+        case '/':
+            if (num2 != 0.0) {
+                result = divide(num1, num2);
+                printf("%.2f / %.2f = %.2f\n", num1, num2, result);
+            } else {
+                printf("Error! Division by zero is not allowed.\n");
+            }
+            break;
+        default:
+            printf("Error! Invalid operator.\n");
+    }
 
